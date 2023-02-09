@@ -25,7 +25,7 @@ namespace ArcadeGameOpening
         }
         private void PlayGame_MouseHover(object sender, EventArgs e)
         {
-            PlayButton.ForeColor = Color.Red;
+            PlayButton.ForeColor = Color.Green;
         
         }
 
