@@ -30,9 +30,11 @@ namespace ArcadeGameOpening
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PlayButton = new System.Windows.Forms.Button();
             this.countLabel = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // PlayButton
@@ -40,7 +42,7 @@ namespace ArcadeGameOpening
             this.PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayButton.Font = new System.Drawing.Font("MS PGothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.PlayButton.Location = new System.Drawing.Point(147, 97);
+            this.PlayButton.Location = new System.Drawing.Point(216, 138);
             this.PlayButton.Name = "PlayButton";
             this.PlayButton.Size = new System.Drawing.Size(142, 38);
             this.PlayButton.TabIndex = 0;
@@ -58,10 +60,16 @@ namespace ArcadeGameOpening
             this.countLabel.Size = new System.Drawing.Size(0, 13);
             this.countLabel.TabIndex = 1;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(450, 329);
+            this.ClientSize = new System.Drawing.Size(571, 410);
             this.Controls.Add(this.countLabel);
             this.Controls.Add(this.PlayButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -83,6 +91,7 @@ namespace ArcadeGameOpening
 
         private System.Windows.Forms.Button PlayButton;
         private System.Windows.Forms.Label countLabel;
+        private ImageList imageList1;
     }
 }
 
